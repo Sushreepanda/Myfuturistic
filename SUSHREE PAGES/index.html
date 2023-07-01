@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-color: blue;
+      }
+      nav {
+        background: #800080;
+        width: 100%;
+        overflow: auto;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        float: left;
+      }
+      nav a {
+        width: 120px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background: #008000;
+        font-size: 17px;
+        color: wheat;
+        padding: 20px 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      nav a:hover {
+        background: skyblue;
+        color: brown;
+      }
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        background-color: rgb(245, 249, 249);
+        overflow: auto;
+      }
+      .gallery {
+        margin: 5px;
+        border: 11px solid #ccc;
+        float: left;
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .gallery img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .desc {
+        padding: 15px;
+      }
+      .action_btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .action_btns button {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        padding: 1rem 2rem;
+        outline: none;
+        border: 2px solid black;
+        border-radius: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+        margin: 3px;
+        padding: 17px;
+      }
+      .portfolio {
+        color: var(--primary-color);
+      }
+      .portfolio:hover {
+        background-color: var(--primary-color-dark);
+        color: #ffff00;
+      }
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .gallery-container > .gallery {
+        width: calc(50% - 10px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="gallery-container">
+        <div class="gallery">
+          <img src="7890.jpg" width="369px" height="248px" />
+          <div class="desc">
+            FIRST IMAGE: SARALA TEMPLE, JAGATSINGHPUR
+            <div class="action_btns">
+              <a href="post.html">
+                <button class="portfolio">More Info About Image</button>
+              </a>
+              <a href="post.html">
+                <button class="portfolio">Read More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <img src="8976.jpg" width="369px" height="248px" />
+          <div class="desc">
+            SECOND IMAGE: JAGANNATH DHAM, PURI
+            <div class="action_btns">
+              <a href="post.html">
+                <button class="portfolio">More Info About Image</button>
+              </a>
+              <a href="post.html">
+                <button class="portfolio">Read More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <img src="1234.jpg" width="369px" height="248px" />
+          <div class="desc">
+            THIRD IMAGE: LINGARAJ TEMPLE
+            <div class="action_btns">
+              <a href="post.html">
+                <button class="portfolio">More Info About Image</button>
+              </a>
+              <a href="post.html">
+                <button class="portfolio">Read More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <img src="2345.jpg" width="369px" height="248px" />
+          <div class="desc">
+            FOURTH IMAGE: RAM MANDIR
+            <div class="action_btns">
+              <a href="post.html">
+                <button class="portfolio">More Info About Image</button>
+              </a>
+              <a href="post.html">
+                <button class="portfolio">Read More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <img src="5886.jpg" width="369px" height="248px" />
+          <div class="desc">
+            FIFTH IMAGE: TARINI MANDIR
+            <div class="action_btns">
+              <a href="post.html">
+                <button class="portfolio">More Info About Image</button>
+              </a>
+              <a href="post.html">
+                <button class="portfolio">Read More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <img
+            src="5544.jpg"
+            width="369px"
+            height="248px"
+          />
+          <div class="desc">
+            SIXTH IMAGE: ISKCON
+            <div class="action_btns">
+              <a href="post.html">
+                <button class="portfolio">More Info About Image</button>
+              </a>
+              <a href="post.html">
+                <button class="portfolio">Read More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
